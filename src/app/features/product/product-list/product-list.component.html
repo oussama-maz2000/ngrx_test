@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-md-4" *ngFor="let pdct of product$ | async">
+    <div class="card mb-4" style="width: 18rem">
+      <div class="card-body">
+        <h4 class="card-title">{{ pdct.title }}</h4>
+        <h5 class="card-text">{{ pdct.category }}</h5>
+        <p class="card-body">{{ pdct.description }}</p>
+        <a class="btn btn-warning">{{ pdct.price }}</a>
+      </div>
+    </div>
+  </div>
+</div>

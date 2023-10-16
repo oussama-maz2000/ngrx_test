@@ -1,0 +1,25 @@
+<form
+  [formGroup]="test_Form"
+  (ngSubmit)="onSubmit()"
+  enctype="multipart/form-data"
+>
+  <div class="row">
+    <div class="col-md-4">
+      <label class="form-label">First Name</label>
+      <input type="text" class="form-control" formControlName="firstName" />
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Last Name</label>
+      <input type="text" class="form-control" formControlName="lastName" />
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Email address</label>
+      <input type="email" class="form-control" formControlName="email" />
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">password</label>
+      <input type="text" class="form-control" formControlName="password" />
+    </div>
+  </div>
+  <button class="btn btn-warning mt-3">submit</button>
+</form>
